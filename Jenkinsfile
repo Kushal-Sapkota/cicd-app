@@ -18,7 +18,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 nodejs('NodeJS-18') {
-                    sh 'npm install'
+                    sh 'npm install --include=dev'
                 }
             }
         }
